@@ -16,13 +16,13 @@ A mini Twitter-like web app built using **Django** where users can create, view,
 ```
 
 ## 📸 Screenshots
-![img_2.png](img_2.png)
+![img_2.png](images/img_2.png)
 
-![img.png](img.png)
+![img.png](images/img.png)
 
-![img_1.png](img_1.png)
+![img_1.png](images/img_1.png)
 
-![img_3.png](img_3.png)
+![img_3.png](images/img_3.png)
 
 
 
