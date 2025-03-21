@@ -3,7 +3,7 @@
 A mini Twitter-like web app built using **Django** where users can create, view, edit, and delete tweets. It supports **user authentication**, image uploads with tweets, and uses **Bootstrap 5** for a responsive UI.
 
 ---
-```
+
 
 ## 🚀 Features
 
@@ -13,7 +13,7 @@ A mini Twitter-like web app built using **Django** where users can create, view,
 - View all Tweets sorted by latest
 - Beautiful UI with Bootstrap 5
 - Dark Theme Support
-```
+
 
 ## 📸 Screenshots
 ![img_2.png](images/img_2.png)
