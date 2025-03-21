@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}TweetAdda{% endblock  %}
+
+{% block content %}
+<h1 class="text-center mt-4">Are you sure you want to delete the tweet?</h1>
+
+<form method="post">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a href="{% url 'tweet_list' %}" class="btn btn-primary">Cancel</a>
+</form>
+{% endblock  %}

@@ -1,0 +1,33 @@
+{% extends "layout.html" %} 
+
+{% block title %}TweetAdda{% endblock %} 
+
+{% block content %}
+<h1 class="text-center mt-4">Welcome to TweetAdda</h1>
+
+<div class="text-center mb-4">
+    <a class="btn btn-primary" href="{% url 'tweet_create' %}">Add Tweet</a>
+</div>
+
+<div class="container">
+  <div class="row gap-3 justify-content-center">
+    {% for tweet in tweets %}
+      <div class="col-md-4">
+        <div class="card" style="width: 100%;">
+          {% if tweet.photo %}
+            <img src="{{ tweet.photo.url }}" class="card-img-top" alt="Tweet Image" />
+          {% endif %}
+          <div class="card-body">
+            <h5 class="card-title">{{ tweet.user.username }}</h5>
+            <p class="card-text">{{ tweet.text }}</p>
+            <a href="{% url 'tweet_edit' tweet.id %}" class="btn btn-primary">Edit</a>
+            <a href="{% url 'tweet_delete' tweet.id %}" class="btn btn-danger">Delete</a>
+          </div>
+        </div>
+      </div>
+    {% empty %}
+      <p class="text-center">No tweets available.</p>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
